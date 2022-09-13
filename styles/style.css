@@ -94,10 +94,3 @@ body {
     width: 1140px;
   }
 }
-
-@media screen and (min-width: 1400px) {
-  .collapse.navbar-collapse {
-    width: 1320px;
-  }
-}
-

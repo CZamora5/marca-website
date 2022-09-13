@@ -19,18 +19,19 @@ body {
 .navbar .dropdown>.dropdown-toggle,
 .navbar .dropdown>.dropdown-toggle:hover {
   color: white;
-  padding: 0.5rem;
+  padding-block: 0.5rem;
 }
 
 .dropdown-toggle {
   font-weight: 700;
 }
 
-.dropdown-toggle:hover {
+.bg-wrapper:hover {
   background-color: var(--clr-dark);
 }
 
-.search-input {
+.form-inline .search-input {
+  width: 100%;
   height: 2rem;
   font-size: 0.875rem;
   padding-left: 0.625rem;
@@ -45,6 +46,24 @@ body {
   list-style: none;
 }
 
+.btn-subscribe {
+  transition: color 250ms;
+  background-color: var(--clr-main);
+  font-size: 0.875rem;
+}
+
+.btn-login {
+  color: var(--clr-main);
+  border: 1px solid rgb(0 0 0 / 0.2);
+  font-size: 0.875rem;
+}
+
+.btn-subscribe:hover, .btn-login:hover {
+  background-color: black;
+  color: white;
+  border-color: black
+}
+
 @media screen and (max-width: 768px) {
   .nav-teams ul {
     display: grid;
@@ -53,3 +72,32 @@ body {
     place-items: center;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .form-inline .search-input {
+    width: 200px;
+  }
+
+  .collapse.navbar-collapse .container {
+    padding: 0;
+  }
+  
+  .collapse.navbar-collapse {
+    margin: 0 auto;
+    width: 960px;
+    padding-inline: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .collapse.navbar-collapse {
+    width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .collapse.navbar-collapse {
+    width: 1320px;
+  }
+}
+

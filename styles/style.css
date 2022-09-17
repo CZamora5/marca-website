@@ -120,6 +120,26 @@ body {
   font-size: 1rem;
 }
 
+.footer {
+  font-size: 0.75rem;
+}
+
+.footer-navbar {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  text-align: center;
+  gap: 1rem;
+}
+
+.footer-navbar a {
+  color: white;
+}
+
+.footer-navbar a:hover {
+  color: var(--clr-main);
+}
+
 .social-networks ul {
   flex-direction: column;
 }
@@ -127,6 +147,23 @@ body {
 @media screen and (min-width: 200px) {
   .social-networks ul {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .footer {
+    font-size: 0.875rem;
+  }
+  
+  .footer-navbar {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .footer-navbar {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -138,7 +175,6 @@ body {
   .footer-links {
     display: flex;
     flex-direction: column;
-    font-size: 0.75rem;
   }
 
   .footer-links li {

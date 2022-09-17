@@ -23,6 +23,19 @@
 
 <body>
 	<header>
+		<div class="text-center d-none d-xl-block" style="background-color: #eceff4; font-size: 0.75rem">
+			<div class="container">
+				<span class="font-weight-bold">Es noticia: </span>
+				<a href="#" style="color: var(--clr-dark-gray);">Canelo vs Golovkin 3</a> /
+				<a href="#" style="color: var(--clr-dark-gray);">América vs Chivas</a> /
+				<a href="#" style="color: var(--clr-dark-gray);">A qué hora sube al ring Canelo</a> /
+				<a href="#" style="color: var(--clr-dark-gray);">Resultados Canelo vs Golovkin</a> /
+				<a href="#" style="color: var(--clr-dark-gray);">Pumas vs Cruz Azul</a> /
+				<a href="#" style="color: var(--clr-dark-gray);">Gran Sorteo Especial 263</a> /
+				<a href="#" style="color: var(--clr-dark-gray);">Últimas noticias</a> /
+				<a href="#" style="color: var(--clr-dark-gray);">VIDEOS de hoy</a>
+			</div>
+		</div>
 		<nav class="container">
 			<div class="row" style="padding-inline: 15px;">
 				<div class="col-4 d-none d-sm-flex align-items-center p-0">
@@ -37,7 +50,7 @@
 					<button class="btn d-lg-none btn-login py-1">Iniciar sesión</button>
 				</div>
 				<div class="col-12 col-sm-4 p-0">
-					<a class="d-flex align-items-center justify-content-center mx-auto" style="height: 4rem;">
+					<a class="d-flex align-items-center justify-content-center mx-auto" style="height: 4rem; overflow: hidden;">
 						<img style="width: 90%; max-width: 12rem; object-fit: cover; object-position: center;"
 							src="./assets/brand.jpg">
 					</a>
@@ -257,35 +270,46 @@
 						</div>
 					</ul>
 					<div class="container">
-						<form class="form-inline d-flex align-items-center justify-content-end">
+						<form class="form-inline d-flex align-items-center justify-content-end position-relative">
 							<input class="form-control rounded-0 search-input" type="search" placeholder="Buscar en marca.com"
 								aria-label="Search">
+							<svg class="position-absolute" style="cursor: pointer; right: 0.25rem;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.5rem" height="1.5rem" viewBox="0 0 30 30"
+								style=" fill:#000000;">
+								<path
+									d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+								</path>
+							</svg>
 						</form>
+					</div>
+					<div class="container d-flex d-sm-none mt-2 btns-nav" style="gap: 0.5rem;">
+						<button class="btn btn-login py-1 fs-md-1 rounded-0" style="width: 100%;">Iniciar sesión</button>
+						<button class="btn btn-subscribe py-1 rounded-0" style="width: 100%;">Suscribete</button>
+					</div>
 					</div>
 				</div>
 			</div>
 		</nav>
-		<div class="nav-teams py-2" style="background-color: #eceff4; justify-content: start;">
+		<div class="nav-teams py-2" style="background-color: #eceff4;">
 			<div class="container">
-				<ul class="m-0 p-0 row">
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/1.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/2.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/3.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/4.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/5.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/6.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/7.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/8.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/9.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/10.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/11.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/12.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/13.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/14.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/15.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/16.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/17.png" alt=""></a></li>
-					<li class="p-0 col"><a href="#"><img src="./assets/logos/18.png" alt=""></a></li>
+				<ul class="m-0 p-0 row align-items-center justify-content-center">
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/1.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/2.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/3.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/4.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/5.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/6.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/7.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/8.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/9.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/10.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/11.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/12.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/13.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/14.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/15.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/16.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/17.png" alt=""></a></li>
+					<li class="p-0 col" style="min-width: max-content; max-width: calc(100% / 12);"><a href="#"><img src="./assets/logos/18.png" alt=""></a></li>
 				</ul>
 			</div>
 		</div>

@@ -32,7 +32,8 @@ body {
   font-weight: 700;
 }
 
-.bg-wrapper:hover, .bg-wrapper:has(.dropdown-toggle[aria-expanded="true"]) {
+.bg-wrapper:hover,
+.bg-wrapper:has(.dropdown-toggle[aria-expanded="true"]) {
   background-color: var(--clr-dark);
 }
 
@@ -64,7 +65,8 @@ body {
   font-size: 0.875rem;
 }
 
-.btn-subscribe:hover, .btn-login:hover {
+.btn-subscribe:hover,
+.btn-login:hover {
   background-color: black;
   color: white;
   border-color: black
@@ -97,7 +99,8 @@ body {
   font-weight: 700;
 }
 
-.dropdown-submenu > a, .dropdown-submenu {
+.dropdown-submenu>a,
+.dropdown-submenu {
   font-size: 0.8125rem;
   color: var(--clr-gray);
 }
@@ -118,6 +121,11 @@ body {
 .dropdown-submenu-subheader a {
   color: white;
   font-size: 1rem;
+}
+
+.games-slider {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
@@ -151,10 +159,19 @@ body {
 }
 
 @media screen and (min-width: 376px) {
+  .games-slider {
+    flex-direction: row;
+  }
+
+  .games-slider-select {
+    min-width: 8rem;
+    padding-right: 0.25rem;
+  }
+
   .footer {
     font-size: 0.875rem;
   }
-  
+
   .footer-navbar {
     grid-template-columns: 1fr 1fr;
     text-align: left;
@@ -190,7 +207,7 @@ body {
   .collapse.navbar-collapse .container {
     padding: 0;
   }
-  
+
   .collapse.navbar-collapse {
     margin: 0 auto;
     width: 960px;

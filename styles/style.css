@@ -160,6 +160,14 @@ body {
   padding-right: 15px;
 }
 
+.texto {
+  font-size: 1rem;
+}
+
+.otro-texto {
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 200px) {
   .social-networks ul {
     flex-direction: row;
@@ -187,12 +195,17 @@ body {
 }
 
 @media screen and (min-width: 576px) {
+  .texto, .otro-texto {
+    font-size: 1.5rem;
+  }
+
   .footer-navbar {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media screen and (min-width: 768px) {
+
   .my-custom-container {
     width: 94%;
     padding: 0;
@@ -214,7 +227,16 @@ body {
   }
 }
 
+
 @media screen and (min-width: 992px) {
+  .texto {
+    font-size: 1.85rem;
+  }
+
+  .otro-texto {
+    font-size: 2rem;
+  }
+
   .form-inline .search-input {
     width: 200px;
   }
@@ -236,5 +258,22 @@ body {
 
   .helper-container .my-custom-container {
     width: 100%;
+  }
+}
+
+.anuncios {
+  justify-content: center;
+}
+
+.anuncios img:nth-child(2) {
+  display: none;
+}
+
+@media screen and (min-width: 1300px) {
+  .anuncios {
+    justify-content: space-between;
+  }
+  .anuncios img:nth-child(2) {
+    display: block;
   }
 }
